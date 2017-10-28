@@ -1,0 +1,24 @@
+{
+  "name": "coreui",
+  "version": "1.0.0-alpha.5 (AngularJS)",
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "jquery": "^3.0.0",
+    "tether": "latest",
+    "angular": "latest",
+    "angular-ui-router": "1.0.0-beta.3",
+    "oclazyload": "latest",
+    "angular-breadcrumb": "latest",
+    "angular-loading-bar": "latest",
+    "fontawesome": "latest",
+    "simple-line-icons": "latest",
+    "chart.js": "^2.3.0",
+    "angular-chart.js": "^1.0.3",
+    "AngularJS-Toaster": "angularjs-toaster#^2.2.0",
+     "angular-datatables": "~1.10.6",
+    "datatables.net": "^1.10.16",
+    "datatables.net-dt": "^3.2.2",
+    "angular-bootstrap": "^2.5.0"
+  },
+  "private": true
+}

@@ -1,0 +1,15 @@
+<div class="modal-content">
+  <div class="modal-header">
+      <h3>Delete contact</h3>
+  </div>
+      <form role="form">
+      <div class="modal-body">
+		  <p>Delete the below contact:</p>
+		  {{employeeId}}
+      </div>
+      <div class="modal-footer">
+		<button type="button" class="btn btn-danger" ng-click="delete()">Delete</button>
+        <button type="button" class="btn btn-warning" ng-click="$dismiss('cancel')">Close</button>
+      </div>
+	</form>
+    </div>

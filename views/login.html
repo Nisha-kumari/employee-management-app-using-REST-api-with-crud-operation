@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-5 col-md-3">
+            <div class="form-login">
+            <form name="userForm" role="form" class="bottom-75" ng-submit="login()" novalidate>
+            <h4>Welcome </h4>
+            <input type="email" name="userEmail" class="form-control input-sm chat-input" placeholder="EMAIL" ng-model="uemail" required />
+            <div ng-messages="userForm.userEmail.$error" ng-if="(userForm.userEmail.$touched && userForm.userEmail.$invalid) || (userForm.$submitted && userForm.userEmail.$invalid)">
+              <p ng-message="email">Enter valid email.</p>
+              <p ng-message="required">Email is required.</p>
+            </div>
+            </br>
+            <input type="password" name="userPassword" class="form-control input-sm chat-input" placeholder="PASSWORD" ng-model="upassword" ng-minlength="6" ng-maxlength="15" required />
+            <div ng-messages="userForm.userPassword.$error" ng-if="(userForm.userPassword.$touched && userForm.userPassword.$invalid) || (userForm.$submitted && userForm.userPassword.$invalid)">
+              <p ng-message="minlength">Password is weak.</p>
+              <p ng-message="maxlength">Password is strong.</p>
+              <p ng-message="required">Password is required.</p>
+            </div>
+            </br>
+            <div class="wrapper">
+              <button type="submit"  class="btn btn-primary btn-md">Login</button>
+            </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- <div class="login-page">
+  <div class="form-content">
+    <form name="userForm" role="form" class="bottom-75" ng-submit="login()" novalidate>
+		<div class="table-form">
+			<div class="form-groups">
+				<div class="form-group left-addon">
+
+					<input type="email" name="userEmail" class="form-control input-lg" id="" placeholder="EMAIL" ng-model="uemail" required/>
+          <div ng-messages="userForm.userEmail.$error" ng-if="(userForm.userEmail.$touched && userForm.userEmail.$invalid) || (userForm.$submitted && userForm.userEmail.$invalid)">
+            <p ng-message="email">Enter valid email.</p>
+            <p ng-message="required">Email is required.</p>
+          </div>
+				</div>
+				<div class="form-group">
+					<input type="password" name="userPassword" class="form-control input-lg" id="" placeholder="PASSWORD" ng-model="upassword" ng-minlength="6" ng-maxlength="15" required/>
+          <div ng-messages="userForm.userPassword.$error" ng-if="(userForm.userPassword.$touched && userForm.userPassword.$invalid) || (userForm.$submitted && userForm.userPassword.$invalid)">
+            <p ng-message="minlength">Password is weak.</p>
+            <p ng-message="maxlength">Password is strong.</p>
+            <p ng-message="required">Password is required.</p>
+          </div>
+				</div>
+			</div>
+			<div class="button-container">
+				<button type="submit"  class="btn btn-default login">Login</button>
+			</div>
+		</div>
+  </form>
+  </div>
+</div> -->
